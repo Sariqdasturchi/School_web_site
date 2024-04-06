@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #FDF8EE;
+}
+
+.logo {
+    width: 200px;
+    height: 55px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 15px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #1D1D1D;
+}
+
+.btns button {
+    width: 121px;
+    height: 45px;
+    border: none;
+    border-radius: 218px;
+    background-color: #4D2C5E;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    cursor: pointer;
+}
+ /* home section */
+.home_page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FDF8EE;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 80vh;
+    background-image: url('../imgs/background.png');
+}
+
+.text_cont {
+    width: 506px;
+    height: 300px;
+}
+
+.text_cont h1 {
+    font-size: 56px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    color: #050C26;
+}
+
+.text_cont .text_color {
+    color: #FF7426;
+}
+
+.text_cont p {
+    margin: 20px 0;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #8A8A8A;
+}
+
+.form_cont {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 79px;
+    border-radius: 96px;
+    background-color: #ffffff;
+    color: #050C26;
+}
+
+.form_cont label {
+    position: absolute; 
+    left: 30px;
+}
+
+.form_cont input {
+    position: absolute;
+    left: 60px;
+    width: 170px;
+    height: 55px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #050C26;
+}
+
+.form_cont button {
+    position: absolute;
+    right: 10px;
+    width: 150px;
+    height: 69px;
+    border-radius: 96px;
+    border: none;
+    background-color: #4D2C5E;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.position_block {
+    position: absolute;
+    bottom: -150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    height: 280px;
+    background-color: #4D2C5E;
+    border-radius: 14px;
+}
+
+.block {
+    width: 419px;
+    height: 137px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid blue; */
+}
+
+.min_card {
+    width: 102px;
+    height: 101px;
+    border-radius: 23px;
+    background-color: #ffffff44;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.block_text_cont {
+    width: 270px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    text-align: start;
+}
+
+.block_text_cont h2 {
+    font-size: 24px;
+    text-align: left;
+    margin: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+
+.block_text_cont p {
+    /* width: 220px; */
+    text-align: left;
+    padding: 0px 15px;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #ffffffa8;
+}
+
+
+/* traks section */
+.traks_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.traks_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    margin-top: 63px;
+}
+
+.traks_text {
+    width: 500px;
+    height: 65px;
+    margin: 25px 0px;
+    text-align: center;
+}
+
+.traks_text h2 {
+    font-size: 38px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+}
+
+.traks_text p {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #8A8A8A;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: 90%;
+    height: 500px;
+    margin: 25px 0px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 423px;
+    height: 457px;
+    border-radius: 15px;
+    box-shadow: 2px 4px 8px silver;
+}
+
+.card .users_image {
+    position: absolute;
+    top: 20px;
+    width: 384px;
+    height: 238px;
+    border-radius: 15px;
+}
+
+.card_text {
+    position: absolute;
+    top: 270px;
+    left: 25px;
+    width: 90%;
+    height: 55px;
+}
+
+.card_text span {
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #8A8A8A;
+    margin: 2px 0px;
+}
+
+.card_text h4 {
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+     font-weight: 600;
+     color: #1D1D1D;
+     margin: 3px 0px;
+}
+
+.card_text p {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #FF7426;
+}
+
+.card_footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    width: 90%;
+    height: 90px;
+    border-top: 2px dotted silver;
+}
+
+.card_footer .foo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_footer .foo p {
+    margin: 0px 8px;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #8A8A8A;
+}
+
+.card button {
+    position: absolute;
+    bottom: -45px;
+    width: 200px;
+    height: 55px;
+    border-radius: 96px;
+    border: none;
+    background-color: #FF7426;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.sun_icon {
+    position: absolute;
+    top: -10px;
+    left: -30px;
+    width: 105px;
+    height: 60px;
+}
+
+.sercil_icon {
+    position: absolute;
+    top: -20px;
+    right: -80px;
+}
