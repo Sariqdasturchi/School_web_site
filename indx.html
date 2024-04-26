@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book store</title>
+    <!-- Swiper css file -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- AOS js Css file  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- style file -->
     <link rel="stylesheet" href="./styles/style.css">
+    <!-- icon -->
+    <link rel="icon" href="./imgs/logo.png">
 </head>
 
 <body>
@@ -65,7 +71,7 @@
                 </div>
             </div>
             <div class="position_block">
-                <div class="block">
+                <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="block">
                     <div class="min_card">
                         <img src="./imgs/online_test.png" alt="online_test">
                     </div>
@@ -76,7 +82,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="block">
+                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="block">
                     <div class="min_card">
                         <img src="./imgs/edit.png" alt="edit">
                     </div>
@@ -87,7 +93,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="block">
+                <div data-aos="fade-left" data-aos-anchor-placement="top-bottom" class="block">
                     <div class="min_card">
                         <img src="./imgs/sertifikat.png" alt="Sertifikat">
                     </div>
@@ -113,12 +119,12 @@
                     <img src="./imgs/sercil.png" alt="">
                 </div>
 
-                <div class="traks_text">
+                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="traks_text">
                     <h2>Our Tracks</h2>
                     <p>Lorem Ipsum is simply dummy text of the printing.</p>
                 </div>
                 <div class="cards">
-                    <div class="card">
+                    <div data-aos="fade-up-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="card">
                         <img class="users_image" src="./imgs/user (3).png" alt="Teacher">
                         <div class="card_text">
                             <span>UI/UX Design</span>
@@ -143,7 +149,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div data-aos="fade-up" data-aos-offset="500" data-aos-easing="ease-in-sine" class="card">
                         <img class="users_image" src="./imgs/user (2).png" alt="Teacher">
                         <div class="card_text">
                             <span>UI/UX Design</span>
@@ -168,7 +174,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div data-aos="fade-left" data-aos-offset="400" data-aos-easing="ease-in-sine" class="card">
                         <img class="users_image" src="./imgs/user (1).png" alt="Teacher">
                         <div class="card_text">
                             <span>UI/UX Design</span>
@@ -196,10 +202,80 @@
             </div>
         </section>
         <!-- section traks end -->
+
+        <!-- section premium start -->
+        <section class="section_premium">
+            <div class="premium_container">
+                <div class="object_sec">
+                    <div class="group"></div>
+                    <div class="group"></div>
+                    <div class="group"></div>
+                    <div class="group"></div>
+                    <div class="group"></div>
+                    <div class="group"></div>
+                </div>
+                <div class="premium_text">
+                    <h1>
+                        Premium <span>Learning</span>
+                        Experience
+                    </h1>
+                    <div class="premium_card">
+                        <div class="pre_card">
+                            <img src="./imgs/element_img/hearts 1.png" alt="">
+                        </div>
+                        <div class="pre_card_text">
+                            <h3>Easily Accessible</h3>
+                            <p>Learning Will fell Very Comfortable With Courslab.</p>
+                        </div>
+                    </div>
+                    <div class="premium_card">
+                        <div class="pre_card">
+                            <img src="./imgs/element_img/jigsaw 1.png" alt="">
+                        </div>
+                        <div class="pre_card_text">
+                            <h3>Fun learning expe</h3>
+                            <p>Learning Will fell Very Comfortable With Courslab.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section premium end -->
+
+        <!-- what our task section start -->
+        <section class="what_section">
+           <div class="left_blur"></div>
+           <div class="left_element">
+            <img src="./imgs/element_img/sircil.png">
+           </div>
+           
+           <div class="right_blur"></div>
+           <div class="right_element">
+            <img src="./imgs/element_img/causel.png" >
+           </div>
+           <div class="section_swiper">
+            <div class="what_section_text">
+                <h1>What student’s say</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing.</p>
+            </div>
+            <div class="swiper_cards">
+                <div class="sw_card"></div>
+                <div class="sw_card"></div>
+                <div class="sw_card"></div>
+            </div>
+           </div>
+        </section>
+        <!-- what our task section end -->
     </main>
     <!-- main end -->
 
-
+    <!-- Swiper js file js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- AOS js file js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- JavaScript file  -->
     <script src="./js/index.js"></script>
 </body>
